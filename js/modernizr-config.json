@@ -1,0 +1,20 @@
+{
+  "minify": true,
+  "options": [
+    "setClasses"
+  ],
+  "feature-detects": [
+    "test/queryselector",
+    "test/css/borderradius",
+    "test/css/boxshadow",
+    "test/css/boxsizing",
+    "test/css/calc",
+    "test/css/generatedcontent",
+    "test/css/opacity",
+    "test/css/rgba",
+    "test/css/textshadow",
+    "test/css/transforms",
+    "test/css/transitions",
+    "test/dom/classlist"
+  ]
+}

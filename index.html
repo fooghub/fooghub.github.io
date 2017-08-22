@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>FOOGHUB</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="icon" href="images/favicon.png" type="image/png" />
+<link rel="stylesheet" href="css/index-min.css" type="text/css">
+<script type="text/javascript" src="js/index-min.js"></script>
+</head>
+<body>
+<!-- Protector -->
+<div id="protector"><img id="protector-imagen" src="images/gif/ajax-loader.gif" alt=""></div>
+<!-- /Protector -->
+<!-- Menú -->
+<div id="directorio-contenidos" class="bocadillo">
+<ul>
+<li id="1" onclick="seleccionar(this.id);">NW.js</li>
+<li id="2" onclick="seleccionar(this.id)">ADOBE AIR</li>
+<li id="3" onclick="seleccionar(this.id);">APACHE CORDOVA</li>
+</ul>
+<hr>
+<ul>
+<li id="4" onclick="seleccionar(this.id);">Acerca de ...</li>
+</ul>
+</div>
+<!--/Menú-->
+<!--Visor-imágenes-->
+<div id="visor-imagen">
+<div id="visor-imagen-cabecera"><div id="visor-imagen-cabecera-izquierda"><div id="visor-imagen-cabecera-izquierda-acceso-pulsador-directorio-contenidos" onclick="directorioContenidos.clic();"></div></div><div id="visor-imagen-cabecera-derecha"><img id="visor-imagen-cierre" src="images/dryicons/delete_item.png" alt="" title="" onclick="visorImagen.cerrar();"></div></div>
+<div id="visor-imagen-cuerpo">
+<div id="visor-imagen-contenido" onclick="visorImagen.avanzar(this.id);"><img id="visor-imagen-carrusel" src="images/capturas/capturas-imagen-base.png" alt="" title=""></div>
+</div>
+<div id="visor-imagen-pie"><div id="visor-imagen-pie-izquierdo"><img id="visor-imagen-pie-pulsador-izquierdo" src="images/dryicons/left_arrow.png" alt="" title="" onmouseover="visorImagen.prepararRetroceso();" onmouseout="visorImagen.restaurarRetroceso();" onclick="visorImagen.retroceder();"></div><div id="visor-imagen-pie-centro" class="bloque"><div id="visor-imagen-pie-texto" class="centrado">&#160;</div></div><div id="visor-imagen-pie-derecho"><img id="visor-imagen-pie-pulsador-derecho" src="images/dryicons/right_arrow.png" alt="" title="" onmouseover="visorImagen.prepararAvance();" onmouseout="visorImagen.restaurarAvance();" onclick="visorImagen.avanzar();"></div></div>
+</div>
+<!--/Visor-imágenes-->
+<div id="continente"><!-- Continente -->
+<div id="cabecera"><!-- Cabecera-->
+<!-- Botón menú -->
+<div id="marco-exterior-pulsador-directorio-contenidos">
+<div id="marco-interior-pulsador-directorio-contenidos">
+<div id="pulsador-directorio-contenidos" onclick="directorioContenidos.clic();">
+<div class="pulsador-directorio-contenidos-barra1"></div>
+<div class="pulsador-directorio-contenidos-barra2"></div>
+<div class="pulsador-directorio-contenidos-barra3"></div>
+</div>
+</div>
+</div>
+<!-- /Botón menú -->
+<div id="logo"> <img id="logo-imagen" src="images/fooghub-logo.png" alt="" title=""></div>
+</div><!-- /Cabecera-->
+<div id="cuerpo"><!-- Cuerpo-->
+<div id="contenido"><!-- Contenido -->
+<noscript><div class="caja"><div class="noscript"><span><img class="icono-32" src="images/alerta_64.png" alt="Error NO JS" title="Error NO JS"></span><span>&#160;<b><u>Este navegador NO soporta JavaScript o está inhabilitado</u> ...</b></span></div></div></noscript>
+<!-- Notificaciones -->
+<div id="notificaciones" class="caja"><table id="notificaciones-tabla"><tr><td></td><td></td><td id="notificaciones-cierre" title="Cerrar notificaciones" onclick="capacidadesNavegador.cerrarNotificaciones();">×</td></tr><tr><td id="notificaciones-imagen"><img src="images/dryicons/info.png" width="32" height="32" title="Información" alt="Información"></td><td colspan = "2" id="notificaciones-texto"><div><span>Este navegador Web</span><span id="navegador-nombre-serie">&#160;</span><span>NO soporta algunas de las características necesarias para una correcta visualización de esta página.</span></div><div>Tal vez conviene intentar alguna actualización.</div></td><tr id="notificaciones-pie"><td colspan = "2"></td><td></td></tr></table></div>
+<!-- Notificaciones -->
+<div id="referenciaNw" class="titular-principal">APLICACIONES DE ESCRITORIO CON TECNOLOGÍAS WEB</div>
+<div class="titular-sector">NW.js</div>
+<!-- -->
+<div class="caja">
+<div class="caja-titular"><span>CDOCS NW</span></div>
+<div class="caja-icono"><img src="images/cdocs-nw-icono.png" alt="" title="" class="imagen-apartado"></div>
+<div class="caja-texto">
+<div><b>CDOCS</b> (Comprueba Documentos) <b>NW</b>. Es una aplicación experimental, divulgativa, de escritorio, gratuita y de Código Abierto. Para <b>Windows</b>, <b>Linux</b> y <b>Mac OS X</b>; con el motor de ejecución <a href="https://nwjs.io/" target="_blank" title="NW.js" class="enlace">NW.js</a> (antes conocido como <b>node-webkit</b>).</div>
+<p><b>Programacíon.</b> Con lenguajes estándar del desarrollo Web: <b>HTML</b>5, <b>CSS</b>3, <b>JAVASCRIPT</b> de propósito general y específico para la API's de <b>NW.js</b> (versión <b>0.13 ó superior</b>), <b>Node.js</b> y <b>Chrome/Chromium</b>. También <b>Markdown</b> y <b>JSON</b>.</p>
+<p><b>Herramientas</b> de desarrollo:</p>
+<ul class="talla-xs espaciado">
+<li><a href="https://nwjs.io/downloads/" target="_blank" title="NW.js - Downloads" class="enlace">NW.js</a> — Permite llamar a todos los módulos <b>Node.js</b> directamente desde el <b>DOM</b>.</li>
+<li><a href="https://nodejs.org/es/download/" target="_blank" title="Node.js - Descargas" class="enlace">Node.js</a>® — Un entorno de ejecución para JavaScript. El ecosistema de paquetes de Node.js, <b>npm</b>, es el más grande en librerías de código abierto del mundo.</li>
+</ul>
+<p><b>Referencias</b> (resumen):</p>
+<ul class="circunferencia talla-xs">
+<li><b>nw</b> — Objeto global. Contiene toda la interfaz de programación de aplicaciones (API) de <b>NW.js</b>.</li>
+<li><b>App</b> — Algunos métodos de este objeto para: Leer las etiquetas del manifiesto, registrar "atajos de teclado", etc. y salir de la aplicación.</li>
+<li><b>Menu</b> — Menú nativo emergente en la ventana principal para todas las plataformas.</li>
+<li><b>Shell</b> — Métodos para abrir un archivo o un directorio local. También un recurso Web en el navegador del equipo.</li>
+<li><b>Shortcut</b> — Atajos de teclado.</li>
+<li><b>Tray</b> — En Windows , muestra un icono en la bandeja del sistema con un menú contextual.</li>
+<li><b>Window</b> — Además de la ventana principal, la aplicación puede abrir ventanas secundarias.<div>&#160;&#8230;&#160;<em>capturePage()</em> — <b>Capturas de pantalla</b>.</div><div>&#160;&#8230;&#160;<em>showDevTools()</em> — Ventana &#8220;inspector&#8221;. Sólo funcional en las versiones <b>NW.js</b> con sabor <b>SDK</b>.</div></li>
+<li><b>Notificaciones</b> (enriquecidas) — Notificaciones en la bandeja del sistema del usuario.</li> 
+<li><b>&#60;webview&#62;</b>— Carga en directo a través de la red de contenido externo en una ventana de la aplicación.</li> 
+<li><b>localStorage</b> — Almacenamiento local.</li> 
+<li><b>WebSQL</b> — La aplicación maneja una base datos en la que almacena información sobre las entidades financieras.</li>
+<li><b>Sistema de archivos</b> — Métodos (síncoronos y asíncronos) del módulo <b>fs-extra</b> para manejar archivos en el área local.</li>
+<li><b>https</b> — El protocolo HTTP sobre TLS / SSL. En <b>Node.js</b> se implementa como un módulo independiente. Utilizado para conexión y transferencia de recursos remotos.</li>
+<li><b>process</b> — Objeto global. Proporciona información y control sobre el proceso <b>Node.js</b> actual.</li> 
+<li><b>child_process</b> (proceso hijo) — El módulo child_process proporciona la capacidad de generar procesos secundarios de naturaleza asíncrona, sin bloqueos.</li> 
+<li><a href="" target="_blank" title="jsPDF" class="enlace">jsPDF</a> — Librería Javascript para crear documentos PDF con contenido variable.<p>&#160;&#8230;&#160;<b>etc</b>.</p></li>
+</ul>
+<p><b>Reconocimientos</b>:</p>
+<ul class="talla-xs sin-adorno">
+<li><b>Imágenes</b>&#160;: Algunos iconos en la aplicación pertenecen a la colección <b>Stickers Icon Set</b> en <a href="http://dryicons.com/free-icons/preview/stickers-icon-set/" class="enlace" target="_blank" title="dryicons.com">DryIcons</a> distribuidos bajo <a href="http://dryicons.com/terms/free/" class="enlace" target="_blank" title="DryIcons Free License Agreement">acuerdo de licencia libre</a>.</li>
+</ul>
+<p><b>Descripción</b>:</p>
+<div class="talla-xs"><div>Mediante el cálculo del dígito o dígitos de control, pretende comprobar la consistencia o veracidad de los números de algunos documentos de identificación personal, fiscal y laboral, de la Administración española (<b>DNI</b>, <b>NIE</b>, <b>NIF</b>, <b>NAF</b>, <b>CCCSS</b>). También la de algunos códigos de identificación financiera, en los ámbitos nacional (<b>CCC</b>) e internacional (<b>BBAN</b>, <b>IBAN</b>, <b>CC</b>).</div><div class="nota"><em>Los resultados ofrecidos por la aplicación son sólo orientativos, deben considerarse de forma prudente. La Administración o las entidades pueden modificar la estructura o los algoritmos de comprobación de sus códigos de identificación.</em></div></div>
+<p><span>&#160;</span><span><img src="images/camera-t50.png" alt="Imágenes" title="Imágenes" class="icono-16"></span><span>&#160;</span><span class="ver-capturas" onclick="visorImagen.abrir('cdocs-nw');">Ver algunas imágenes</span><span> (capturas de pantalla).</span></p>
+<p><span>&#160;</span><span><img src="images/github-icono.png" alt="GitHub" title="GitHub" class="icono-16"></span><span>&#160;<b>Leer más</b> ...</span></p>
+<ul class="espaciado">
+<li><a href="https://github.com/fooghub/Cdocs-NW/blob/master/cdocs-nw-proyect/md/documentation.md" target="_blank" title="CDOCS NW - Documentación (GitHub)" class="enlace">Documentación</a>.</li>
+<li><a href="https://github.com/fooghub/Cdocs-NW" target="_blank" title="CDOCS NW - GitHub" class="enlace">Código fuente</a>.</li>
+</ul>
+<p><b>Descargas</b> ... (en obras de reforma)</p>
+<div style="color:#DDDDDD; background-color:inherit;">
+<ul class="circunferencia espaciado">
+<li>
+<div><b>Windows 32 bit:</b></div>
+<div>cdocs-nw-0.1.0-win32.zip</div>
+</li>
+<li>
+<div><b>Windows 64 bit:</b></div>
+<div>cdocs-nw-0.1.0-win64.zip</div>
+</li>
+<li>
+<div><b>Linux 32 bit:</b></div>
+<div>cdocs-nw-0.1.0-lnx32.tar.gz</div>
+</li>
+<li>
+<div><b>Linux 64 bit:</b></div>
+<div>cdocs-nw-0.1.0-lnx64.tar.gz</div>
+</li>
+<li>
+<div><b>Mac OS X 64 bit:</b></div>
+<div>cdocs-nw-0.1.0-macosx.zip</div>
+</li>
+</ul>
+<p>Las descargas contienen la versión <b>0.1.0</b> de la aplicación <b>CDOCS NW</b> junto con los archivos correspondientes al paquete <b>NW.js</b> versión <b>0.14.7 LTS</b> (&#8220;sabor&#8221; <b>SDK</b>).
+<div class="nota talla-xs" style="color:#DDDDDD; background-color:inherit;">
+Politíca de lanzamientos <b>NW.js LTS</b> (<em>Long Term Support</em>): Con soporte para <b>Windows XP</b> y <b>Mac OS X 10.6</b>. <b>Chromium</b> y <b>Node.js</b> en esta edición especial se adhieren a una versión fija. No habrá futuras actualizaciones de seguridad para esta versión.
+</div>
+</div><!-- /obras -->
+<ul class="talla-xs sin-adorno">
+<li><b>Licencia</b>:&#160;<img class="icono-16" src="images/mit-license/mit.png" alt="Licencia MIT" title="Licencia MIT">&#160;<a href="#" class="enlace" title="The MIT License" onclick="cargarFormulario('licenciaMIT');">MIT License</a>.</li>
+</ul>
+<hr>
+</div>
+</div>
+<!-- -->
+<div id="referenciaAir" class="titular-sector">ADOBE<sup>&#174;</sup> AIR<sup>&#174;</sup></div>
+<!-- -->
+<div class="caja">
+<div class="caja-titular">CDOCS AIR</div>
+<div class="caja-icono"><img src="images/cdocs-air-icono.png" alt="" title="" class="imagen-apartado"></div>
+<div class="caja-texto">
+<p><b>CDOCS</b> (Comprueba Documentos) <b>AIR</b>. Es una aplicación experimental, divulgativa, de escritorio, gratuita y de Código Abierto. Para <b>Windows</b> y <b>Mac OS X</b>, con el motor de ejecución <a href="https://get.adobe.com/es/air/otherversions/" target="_blank" title="ADOBE AIR" class="enlace">ADOBE AIR</a> (<em>Adobe Integrated Runtime</em>).</p>
+<p><b>Programación</b>. Con lenguajes estándar del desarrollo Web: <b>HTML</b>, <b>CSS</b>, <b>JAVASCRIPT</b> de propósito general y específico para la <b>API</b> de <b>AIR</b>. También <b>XML</b> y <b>ActionScript</b>. Compilada, firmada y empaquetada para su distribución con las herramientas disponibles en <b>Adobe® Flex® 4.6 SDK</b> ...</p>
+<p><b>Herramientas</b> de desarrollo:</p>
+<ul class="talla-xs espaciado">
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/" target="_blank" title="Java JDK" class="enlace">JAVA Development Kit</a> (JDK) o <a href="https://www.java.com/es/download/" target="_blank" title="Java JRE" class="enlace">JAVA Runtime Environment</a> (JRE). Plataforma <b>JAVA</b> estándar para desarrolladores y motor de ejecución <b>JAVA</b> para usuarios finales.</li>
+<li><a href="http://www.adobe.com/devnet/air/air-sdk-download.html" target="_blank" class="enlace" title="AIR SDK - Download">Adobe® AIR® SDK</a> ó <a href="http://www.adobe.com/devnet/flex/flex-sdk-download.html" target="_blank" class="enlace" title="Adobe FX - Donwloads">Adobe® Flex® SDK</a> . Conjunto de herramientas de desarrollo de software para aplicaciones <b>AIR</b>.</li>
+</ul>
+<p><b>Referencias</b> (resumen):</p>
+<ul class="circunferencia talla-xs">
+<li>Creación, posicionamiento y manejo de la <b>ventana nativa principal</b> y de <b>ventanas secundarias</b>, de los tipos “normal” y “utilidad”.</li>
+<li>Construcción de <b>menús</b>, emergente en el caso del principal y contextuales asociados a los iconos que aparecen en la bandeja del sistema o en el “Dock” (Mac OS X).</li>
+<li><div>Lectura de la <b>base de datos</b> local:</div>
+<div>Base de datos <a href="https://www.sqlite.org/" target="_blank" class="enlace" title="sqlite.org">SQLite</a> con datos públicos sobre las Entidades Financieras con establecimiento en España.</div> 
+</li>
+<li>Lectura del <b>archivo descriptor</b> (XML) y de otros archivos con este mismo formato.</li>
+<li>Monitorización del estado de Internet (precisa de <b>servicemonitor.swf</b>).</li>
+<li>Llamadas al <b>navegador</b> instalado en el equipo para la presentación de las páginas web (externas).</li>
+<li>Gestión del <b>sistema de ficheros</b>.</li>
+<li>Apertura de archivos con su <b>programa determinado</b> por defecto en el sistema.</li>
+<li><b>Actualizaciones</b> desde un servidor remoto (descarga e instalación del paquete instalador [.air] con la versión solicitada).</li>
+<li> Visor local de Código Fuente (con <b>AIRSourceViewer.js</b>).</li>
+<li>&#8220;<b>Capacidades</b>&#8221; del software, en el equipo del usuario.</li>
+<li><b>Eventos</b> de conexión, error, progreso de descarga y estado de ventanas. … etc.</li>
+<li><b>AIRAliases.js</b> proporciona definiciones de “alias” que permiten acceder a las clases runtime con definiciones cortas.</li>
+<li><a href="http://alivepdf.bytearray.org/" target="_blank" title="ALIVEPDF" class="enlace">ALIVEPDF</a> (ActionScript 3 Open-Source PDF Library). Creación de archivos <b>PDF</b> <em>&#8220;al vuelo&#8221;</em>.<p>... etc.</p></li>
+</ul>
+<p><b>Dependencias</b>:</p>	
+<ul class="sin-adorno talla-xs">
+<li>Para visualizar documentos <b>PDF</b> desde cualquier aplicación <b>AIR</b> es necesario que el equipo disponga previamente del visor gratuito (genuino) <a href="https://get.adobe.com/es/reader/otherversions/" target="_blank" class="enlace" title="Adobe Acrobat Reader">Adobe Acrobat Reader</a> (versión <b>8.1</b> o superior) asignado como preferente, por defecto.</li>
+</ul>
+<p><b>Reconocimientos</b>:</p>
+<ul class="sin-adorno talla-xs">
+<li><b>Imágenes</b>&#160;: Algunos iconos en la aplicación pertenecen a la colección <b>Stickers Icon Set</b> en <a href="http://dryicons.com/free-icons/preview/stickers-icon-set/" class="enlace" target="_blank" title="dryicons.com">DryIcons</a> distribuidos bajo <a href="http://dryicons.com/terms/free/" class="enlace" target="_blank" title="DryIcons Free License Agreement">acuerdo de licencia libre</a>.</li>
+</ul>
+<p><b>Descripción</b>:</p>
+<div class="talla-xs"><div>Mediante el cálculo del dígito o dígitos de control, pretende comprobar la consistencia o veracidad de los números de algunos documentos de identificación personal, fiscal y laboral, de la Administración española (<b>DNI</b>, <b>NIE</b>, <b>NIF</b>, <b>NAF</b>, <b>CCCSS</b>). También la de algunos códigos de identificación financiera, en los ámbitos nacional (<b>CCC</b>) e internacional (<b>BBAN</b>, <b>IBAN</b>, <b>CC</b>).</div><div class="nota"><em>Los resultados ofrecidos por la aplicación son sólo orientativos, deben considerarse de forma prudente. La Administración o las entidades pueden modificar la estructura o los algoritmos de comprobación de sus códigos de identificación.</em></div></div>
+<p><span>&#160;</span><span><img src="images/camera-t50.png" alt="Imágenes" title="Imágenes" class="icono-16"></span><span>&#160;</span><span class="ver-capturas" onclick="visorImagen.abrir('cdocs-air');">Ver algunas imágenes</span><span> (capturas de pantalla).</span></p>
+<p><span>&#160;</span><span><img src="images/github-icono.png" alt="GitHub" title="GitHub" class="icono-16"></span><span>&#160;<b>Leer más</b> ...</span></p>
+<ul class="espaciado">
+<li><a href="https://github.com/fooghub/Cdocs-HTML-Javascript-AIR/blob/master/md/documentation.md" target="_blank" title="CDOCS AIR - Documentación (GitHub)" class="enlace">Documentación</a>.</li>
+<li><a href="https://github.com/fooghub/Cdocs-HTML-Javascript-AIR" title="CDOCS AIR - GitHub" class="enlace">Código fuente</a>.</li>
+</ul>
+<p><b>Descargas</b> (última versión) ...</p>
+<ul class="espaciado"><li><div><b>Windows</b> y <b>Mac OS X</b> (32 y 64 bit):</div><div><a href="https://www.foog.es/download/air/cdocs/cdocs.air" title="cdocs.air" class="enlace">cdocs.air</a></div></li></ul>
+<div class="nota">
+<div>Para su instalación y funcionamiento es imprescindible disponer previamente de la versión 2.6 (o superior) del motor de ejecución: <a href="https://get.adobe.com/es/air/" target="_blank" title="Adobe AIR" class="enlace">Adobe AIR (Adobe Integrated Runtime)</a>, instalado en el equipo.</div>
+<div style="margin-top: 6px;" class="talla-xs"><b>ADOBE</b> no ofrece soporte <b>AIR</b> (<em>runtime</em> y <b>SDK</b>) para distribuciones <b>Linux</b> de escritorio. Desde su (ya antigua) versión <b>2.7.</b></div>
+</div>
+<ul class="talla-xs sin-adorno">
+<li><b>Licencia</b>:&#160;<img class="icono-16" src="images/mit-license/mit.png" alt="Licencia MIT" title="Licencia MIT">&#160;<a href="#" class="enlace" title="The MIT License" onclick="cargarFormulario('licenciaMIT');">MIT License</a>.</li>
+</ul>
+<hr>
+</div>
+</div>
+<!-- -->
+<div class="caja">
+<div class="caja-titular">RELOJ AIR</div>
+<div class="caja-icono"><img src="images/reloj-air-icono.png" alt="" title="" class="imagen-apartado"></div>
+<div class="caja-texto">
+<div><b>RELOJ</b> (FLEX) <b>AIR</b>. Es una aplicación, divulgativa, de escritorio, gratuita y de Código Abierto. Para <b>Windows</b> y <b>Mac OS X</b>, con el motor de ejecución <a href="https://get.adobe.com/es/air/otherversions/" target="_blank" title="ADOBE AIR" class="enlace">ADOBE AIR</a> (<em>Adobe Integrated Runtime</em>).</div>
+<p>El reloj original es una animación <b>Flash</b> que forma parte de la colección de ejemplos distribuidos por <a href="http://www.adobe.com/devnet/actionscript/samples/time_2.html" target="_blank" title="Adobe Developer" class="enlace">Adobe Developer Connection —ActionScript Technology Center — Samples</a>.</p>
+<div style="margin-top: 6px;">Ésta es una adaptación que presenta un &#8220;<em>widget</em>&#8221;, liviano, transparente, móvil y de aspecto personalizado. Construido (y restaurado) con la herramienta <b>Flex SDK versión 4.6</b>.</div><div>Pulsando sobre el Reloj con el botón izquierdo del ratón puedes cambiar su posición en la pantalla y con el botón derecho acceder a un menú contextual que permite, entre otros, personalizar su apariencia.</div>
+<p><b>Programacíon</b>. Con <b>XML</b>, <b>MXML</b> y <b>ActionScript</b>.<p> 
+<p><b>Herramientas</b> de desarrollo:</p>
+<ul class="talla-xs espaciado">
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/" target="_blank" title="Java JDK" class="enlace">JAVA Development Kit</a> (JDK) o <a href="https://www.java.com/es/download/" target="_blank" title="Java JRE" class="enlace">JAVA Runtime Environment</a> (JRE). Plataforma <b>JAVA</b> estándar para desarrolladores y motor de ejecución <b>JAVA</b> para usuarios finales, respectivamente.</li>
+<li><a href="http://www.adobe.com/devnet/flex/flex-sdk-download.html" target="_blank" class="enlace" title="Adobe FX - Donwloads">Adobe® Flex® SDK</a> . Conjunto de herramientas de desarrollo de software para aplicaciones <b>AIR</b>.</li>
+</ul>
+<p><span>&#160;</span><span><img src="images/camera-t50.png" alt="Imágenes" title="Imágenes" class="icono-16"></span><span>&#160;</span><span class="ver-capturas" onclick="visorImagen.abrir('reloj-air');">Ver algunas imágenes</span><span> (capturas de pantalla).</span></p>
+<p><span>&#160;</span><span><img src="images/github-icono.png" alt="GitHub" title="GitHub" class="icono-16"></span><span>&#160;<b>Leer más</b> ...</span></p>
+<ul class="espaciado">
+<li><a href="https://github.com/fooghub/Reloj-Flex-AIR/blob/master/doc/DOC.md" target="_blank" title="RELOJ AIR - Documentación (GitHub)" class="enlace">Documentación</a>.</li>
+<li><a href="https://github.com/fooghub/Reloj-Flex-AIR" title="RELOJ AIR - GitHub" class="enlace">Código fuente</a>.</li>
+</ul>
+<p><b>Descargas</b> (última versión) ...</p>
+<ul class="espaciado"><li><div><b>Windows</b> y <b>Mac OS X</b> (32 y 64 bit):</div><div><a href="https://www.foog.es/download/air/reloj/updates/app/reloj.air" title="reloj.air" class="enlace">reloj.air</a></div></li></ul>
+<div class="nota">
+<div>Para su instalación y funcionamiento es imprescindible disponer previamente de la versión 3.1 (o superior) del motor de ejecución: <a href="https://get.adobe.com/es/air/" target="_blank" title="Adobe AIR" class="enlace">Adobe AIR</a> (<em>Adobe Integrated Runtime</em>), instalado en el equipo.</div>
+<div style="margin-top: 6px;" class="talla-xs"><b>ADOBE</b> no ofrece soporte <b>AIR</b> (<em>runtime</em> y <b>SDK</b>) para distribuciones <b>Linux</b> de escritorio. Desde su (ya antigua) versión <b>2.7.</b></div>
+</div>
+<ul class="talla-xs sin-adorno">
+<li><b>Licencia</b>:&#160;<img class="icono-16" src="images/creative-commons/cc-fb.png" alt="Creative Commons" title="Creative Commons">&#160;<a href="#" onclick="cargarFormulario('licenciaCCnc');" class="enlace" title="Creative Commons (CC BY-NC-SA 3.0">Creative Commons</a> (Reconocimiento-NoComercial-CompartirIgual 3.0 Unported).</li>
+</ul>
+<hr>
+</div>
+</div>
+<!-- -->
+<div class="titular-principal">APLICACIONES MÓVILES CON TECNOLOGÍAS WEB</div>
+<div id="referenciaCordova" class="titular-sector">APACHE CORDOVA<sup>&#8482;</sup></div>
+<div class="caja">
+<div class="caja-titular">RELOJ CALENDARIO CORDOVA</div>
+<div class="caja-icono"><img src="images/reloj-cordova-icono.png" alt="" title="" class="imagen-apartado"></div>
+<div class="caja-texto">
+<div><b>RELOJ CALENDARIO CORDOVA</b>. Es una aplicación simple,experimental, divulgativa, gratuita y de Código Abierto para dispositivos <em>móviles</em> (<b>Android</b>).</div>
+<p><b>Programación</b>. Con <b>HTML</b>5 , <b>CSS</b>3, <b>JAVASCRIPT</b> (<b>jQuery</b> - <b>jQuery Mobile</b>) y el marco de desarrollo multiplataforma <b>Apache CORDOVA</b>™.</p>
+<p><b>Herramientas</b> para el desarrollo de una aplicación <b>Android</b>, con <b>APACHE CORDOVA</b>™:</p>
+<ul class="talla-xs espaciado">
+<li><a href="https://nodejs.org/es/download/" target="_blank" title="Node.js - Descargas" class="enlace">Node.js</a>®. Un entorno de ejecución para JavaScript. El ecosistema de paquetes de Node.js, <b>npm</b>, es el más grande en librerías de código abierto del mundo.</li>
+<li><a href="https://git-scm.com/downloads" target="_blank" title="Git scm - Downloads" class="enlace">Git</a> (cliente). Software de control de versiones.</li>
+<li><a href="http://www.oracle.com/technetwork/java/javase/downloads/index.html" target="_blank" title="Java Development - Downloads" class="enlace">Java Development Kit (JDK)</a> (versión <b>7</b> o superior). Plataforma <b>JAVA</b> estándar, para desarrolladores.</li>
+<li><a href="https://developer.android.com/studio/index.html" target="_blank" title="Android Studio" class="enlace">Android Studio</a>. <b>IDE</b> para el desarrollo de aplicaciones <b>Android</b>.</li>
+<li>
+<div><a href="https://cordova.apache.org/" target="_blank" class="enlace" title="Apache Cordova">Apache CORDOVA</a>. Marco de desarrollo de código abierto. Permite utilizar las tecnologías estándar Web como <b>HTML</b>, <b>CSS</b> y <b>JavaScript</b> para construir aplicaciones multiplataforma, evitando el lenguaje de desarrollo nativo (<b>Java</b>, en <b>Android</b>) de cada uno de los sistemas operativos de muchos dispositivos móviles.</div>
+<div>Instalación, vía <b>NPM</b> (gestor de paquetes de <b>Node.js</b>, desde la línea de comandos de una terminal):</div>
+<p style="text-align:center;"><b><code>$ npm install -g cordova</code></b></p>
+</li>
+</ul>
+<ul class="talla-xs">
+<li><div><b>jQuery</b> y <b>jQuery Mobile</b>. <a href="https://jquery.com/" target="_blank" title="jQuery" class="enlace">jQuery</a> es una biblioteca multiplataforma de <b>JavaScript</b>, que permite simplificar la manera de interactuar con los documentos <b>HTML</b>, manipular el árbol <b>DOM</b>, manejar eventos, desarrollar animaciones y agregar interacción con la técnica <b>AJAX</b>.</div> 
+<div><a href="https://jquerymobile.com/" target="_blank" title="jQuery Mobile" class="enlace">jQuery Mobile</a> es un <em>Framework</em> optimizado para dispositivos táctiles, desarrollado actualmente por el equipo de proyectos de <b>jQuery</b>.</div>
+</li>
+</ul>
+<p><b>Referencias</b> ~ <b><em>Plugins</em></b> (resumen):</p>
+<ul class="circunferencia talla-xs">
+<li><b>cordova-plugin-device</b> — Define un objeto global <em>device</em>, que describe el hardware y el software del dispositivo.</li>
+<li><b>cordova-plugin-splashscreen</b> — Muestra y oculta una pantalla de bienvenida durante la puesta en marcha de la aplicación.</li>
+<li><b>cordova-plugin-network-information</b> — Proporciona información acerca de la conexión telefónica y Wi-Fi del dispositivo y si.este dispone de una conexión a Internet.</li>
+<li><b>io.litehelpers.cordova.sqlite</b> — Interfaz nativa de <a href="https://www.sqlite.org/" target="_blank" class="enlace" title="sqlite.org">SQLite</a> en <b>Cordova</b>. La aplicación incorpora una pequeña base de datos local, situada en el directorio raíz para conservar los cambios de configuración realizados por el usuario.</li>
+<li><b>com.darktalker.cordova.screenshot</b> — Permite tomar capturas de la pantalla actual y almacenar las imágenes en el dispositivo.</li>
+<li><b>cordova-plugin-nativeaudio</b> — Extensión para la reproducción de audio nativo.</li>
+<li><b>cordova-plugin-dialogs</b> — Proporciona acceso a algunos elementos de la interfaz de diálogo nativa a través de un objeto global <em>navigator.notification</em>.</li>
+<li><b>cordova-plugin-file</b> — Implementa una API que permite el acceso en el modo de lectura / escritura a los archivos que residen en el dispositivo.</li>
+<li><b>cordova-plugin-file-transfer</b> — Permite cargar y descargar archivos.</li>
+<li><b>com.borismus.webintent</b> — Web Intent es un marco experimental para la comunicación entre aplicaciones. Este <em>plugin</em> se utiliza, entre otros usos, para abrir paquetes Android.apk.</li>
+<li><b>ionic-plugin-keyboard</b> — El objeto <em>cordova.plugins.Keyboard</em> ofrece funciones para hacer la interacción con el teclado más fácil, y desencadena eventos para indicar cuando el teclado virtual del dispositivo se abre o cierra.</li>
+<li><b>cordova-plugin-battery-status</b> — Indica el estado de la batería (porcentaje disponible) y detecta, en su caso, si se está cargando.</li>
+<li><b>cordova-plugin-file-transfer</b> — Permite cargar y descargar archivos.</li>
+<li><b>uk.co.workingedge.phonegap.plugin.istablet</b> — Indica si el dispositivo (Android o iOS) es una &#8220;tablet&#8221;.</li>
+<li><b>cordova-plugin-inappbrowser</b> — Proporciona directamente una vista, integrada en la aplicación, del navegador web del sistema.</li>
+<li><b>cordova-plugin-whitelist</b> — Controla qué direcciones URL de la aplicación pueden solicitarse al sistema (para abrir). Por defecto, no se permiten las URL externas. Cordova añade automáticamente este plugin, en el momento de la creación del proyecto..<p>... etc.</p></li>
+</ul>
+<p><span>&#160;</span><span><img src="images/camera-t50.png" alt="Imágenes" title="Imágenes" class="icono-16"></span><span>&#160;</span><span class="ver-capturas" onclick="visorImagen.abrir('reloj-cordova');">Ver algunas imágenes</span><span> (capturas de pantalla).</span></p>
+<p><span>&#160;</span><span><img src="images/github-icono.png" alt="GitHub" title="GitHub" class="icono-16"></span><span>&#160;<b>Leer más</b> ...</span></p>
+<ul class="espaciado">
+<li><a href="https://github.com/fooghub/Reloj-Cordova-Ejemplo/blob/master/www/doc/DOC.md" target="_blank" title="RELOJ CORDOVA - Documentación (GitHub)" class="enlace">Documentación</a>.</li>
+<li><a href="https://github.com/fooghub/Reloj-Cordova-Ejemplo" title="RELOJ CORDOVA - GitHub" class="enlace">Código fuente</a>.</li>
+</ul>
+<p><b>Descargas</b> (versión 1.0.5) ...</p>
+<ul class="espaciado">
+<li><div><b>ANDROID</b>:</div>
+<p><a href="https://www.foog.es/download/cordova/reloj/android/es.foog.cordova.reloj/1.0.5/android-release.apk" class="enlace">android-release.apk</a></p>
+</li>
+</ul>
+<div class="nota">
+<div>Esta aplicación, experimental,  no forma parte del circuito comercial (<b>Google Play Store</b> — <b>Android</b>).</div>
+<div>Para su descarga e instalación en tu dispositivo la opción de seguridad: &#8220;<b>Permitir la instalación de aplicaciones de origen desconocido</b>&#8221; debe permanecer seleccionada.</div>
+</div>
+<ul class="talla-xs sin-adorno">
+<li><b>Licencia</b>:&#160;<img class="icono-16" src="images/mit-license/mit.png" alt="Licencia MIT" title="Licencia MIT">&#160;<a href="#" class="enlace" title="The MIT License" onclick="cargarFormulario('licenciaMIT');">MIT License</a>.</li>
+</ul>
+<hr>
+</div>
+</div>
+<!-- -->
+<div id="contenido-auxiliar-variable-AJAX" class="caja">&#160;</div>
+<div class="caja"><p id="pulsador-subir" onclick="desplazarseHasta('0', true);">&#9651;</p></div>
+</div><!-- /Contenido -->
+</div><!-- /Cuerpo-->
+
+<div id="pie"><!-- Pie -->
+<div id="pie-derecho" onclick="window.open('https://www.foog.es/')" title="www.foog.es">
+<div id="pie-derecho-foog-software"><span class="copyleft" title="Copyleft">&#169;</span><span>2004&#160;—&#160;</span><span id="anualidad">&#160;</span><span>&#160;Foog.Software</span></div>
+<div id="pie-derecho-foog-web">www.foog.es</div>
+</div>
+</div><!-- /Pie -->
+</div><!-- /Continente -->
+</body>
+</html>
