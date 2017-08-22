@@ -19,7 +19,7 @@ Está hospedado en [**Github Pages**][1], un servicio de alojamiento estático y
 
   * Librería [**Modernizr**][7], algunas funciones para comprobar si la versión del navegador del usuario es adecuada para la correcta visualización de esta página.
 
-  * El _script_ [**browser.js** de  Dustin Diaz][8] facilita la detección de algunas características del dispositivo y nagegador del usuario.
+  * El _script_ [**browser.js** de  Dustin Diaz][8] facilita la detección de algunas características del dispositivo y navegador del usuario.
 
   * El [**ofuscador** de Tim Williams][9], permite encriptar en el código, las direcciones de correo electrónico para evitar el _spam_.
 
